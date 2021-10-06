@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require 'bundler/setup'
+require_relative '../person'
+require_relative '../mercado'
+require_relative '../praca'
+require_relative '../igreja'
+require_relative '../escola'
+require 'irb'
+IRB.start(__FILE__) 
