@@ -10,9 +10,10 @@ abstração: processo  pelo qual se isolam características de um objeto, consit
 abstração devem ser incompletas  e imprecisas -> mas isto não significa que ela perdera sua utilidade->Modelar necessidades especificas + flexibilidade.
 Processo de pensar de forma mais abstrata é conhecida como generalização e especialização
 
--estruras básicas
+-estruturas básicas
 *Reuso -> Pior prática repetição de código, mais código repetido,mais dificil ficara a sua manutenção.
 Herança => é possivel criar classes a partir de outras classes =>Reaproveitamento de códigos-dados e comportamento- da classe mãe.
 Assosiação => O reaproveitamento é diferente.Uma classe pede ajuda a outra para poder fazer o que ela não consegue fazer por si só.A associação permite que uma classe forneça uma porçao de código a outra.
 Encapsulamento-> esconder a implementação de alguma necessidade-dando a quem precisa apenas o resultado gerado-ocultação da informação-cria uma casca(metódos) ao redor das características(atributos).
 Todos os conecitos chaves da Orientação a Objetos(Estruturais, Relacionais e Organizacionais)
+

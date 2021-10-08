@@ -7,4 +7,12 @@ class Mercado
     @empregados = []
     @clientes = []
   end
+
+  def add_produto(produto)
+    @produtos << produto
+  end
+
+  def add_empregado(empregado)
+    @empregados << empregado
+  end
 end
