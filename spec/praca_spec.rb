@@ -10,4 +10,8 @@ describe Praca do
     expect(praca.nome).to eq 'Praça da Matriz'
   end
 
+  it 'deve add um banco' do
+    banco = praca.add_bancos(banco)
+    expect(praca.bancos.size).to eq 1
+  end
 end

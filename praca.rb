@@ -4,4 +4,8 @@ class Praca
     @bancos = []
     @nome = nome
   end
+
+  def add_bancos(banco)
+    @bancos << banco
+  end
 end
