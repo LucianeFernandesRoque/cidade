@@ -5,4 +5,16 @@ class Igreja
     @bancos =[]
     @padre = padre
   end
+
+  def add_fieis(fiel)
+    @fieis << fiel
+  end
+
+  def add_bancos(banco)
+    @bancos << banco
+  end
+
+  def add_nome_padre(padre)
+    @padre = ('Fabio De Mello 48')
+  end
 end
