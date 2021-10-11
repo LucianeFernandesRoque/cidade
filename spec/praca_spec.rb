@@ -1,4 +1,5 @@
 require_relative '../praca'
+require_relative '../person'
 
 describe Praca do
   let(:praca) { Praca.new('Praça da Matriz')} 
@@ -13,5 +14,11 @@ describe Praca do
   it 'deve add um banco' do
     banco = praca.add_bancos(banco)
     expect(praca.bancos.size).to eq 1
+  end
+
+  it 'add aposentado' do
+    aposentado = Person.new('Larissa','Manoela',80)
+    aposentado = praca.add_aposentados(aposentado)
+    expect(praca.aposentados.size).to eq 1
   end
 end
