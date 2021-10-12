@@ -1,8 +1,0 @@
-FROM ruby:3.0.0
-RUN apt-get update
-
-RUN mkdir -p /app
-WORKDIR /app
-COPY Gemfile /Gemfile
-COPY Gemfile.lock ./Gemfile.lock
-RUN gem install bundler && gem install
