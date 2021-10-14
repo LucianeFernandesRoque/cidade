@@ -13,4 +13,7 @@ attr_reader :nome, :sobrenome, :idade
   def falar
     'Hello World'
   end
+
+  def sentar_no_banco
+  end
 end
