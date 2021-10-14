@@ -29,12 +29,14 @@ end
     expect(banco.lugares_disponiveis).to eq 0    
   end
 
-  it 'deve mostrar a quantidade de lugares disponiveis' do
+  it 'o banco pode ter um lugar disponovel' do
     banco.ocupar_acento
-    expect(banco.lugares_disponiveis).to eq 2
+    banco.ocupar_acento
+    expect(banco.lugares_disponiveis).to eq 1
   end
 
-  it 'o banco pode ter dois lugares disponiveis' do
-    
+  it 'o banco pode ter dois lugar disponiveis' do
+    banco.ocupar_acento
+    expect(banco.lugares_disponiveis).to eq 2
   end
 end
