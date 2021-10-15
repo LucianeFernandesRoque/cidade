@@ -30,6 +30,9 @@ describe SalaDeAula do
     
   end
   it 'deve ter giz' do
+    giz = SalaDeAula.new('giz') do 
+      expect(sala_de_aula)
+    end
     
   end
   it 'deve ter alunos' do
