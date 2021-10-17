@@ -1,18 +1,18 @@
 require_relative '../sala_de_aula'
 describe SalaDeAula do
   it 'deve ter 20 carteiras' do
-    sala_de_aula = SalaDeAula.new(carteiras: 20 ,lousa:'lousa')
+    sala_de_aula = SalaDeAula.new(carteiras: 20)
     expect(sala_de_aula.carteiras).to eq 20
   end
 
   it 'deve ter 40 carteiras' do
-    sala_de_aula = SalaDeAula.new(carteiras: 40, lousa:'lousa')
+    sala_de_aula = SalaDeAula.new(carteiras: 40)
     expect(sala_de_aula.carteiras).to eq 40
   end
 
   it 'deve ter 10 carteiras ocupadas' do
-    sala_de_aula = SalaDeAula.new(carteiras: 3, lousa:'lousa')
-    sala_de_aula.ocupar_carteira(carteiras: 2)
+    sala_de_aula = SalaDeAula.new
+    sala_de_aula.ocupar_carteira(carteiras: 10)
     expect(sala_de_aula.carteiras_ocupadas).to eq 2
   end
 
