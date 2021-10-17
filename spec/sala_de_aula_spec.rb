@@ -11,9 +11,9 @@ describe SalaDeAula do
   end
 
   it 'deve ter 10 carteiras ocupadas' do
-    sala_de_aula = SalaDeAula.new(alunos: 10)
-    sala_de_aula.professor_escreve_na_lousa(alunos) 
-    expect(sala_de_aula.professor_escreve_na_lousa).to eq 18
+    sala_de_aula = SalaDeAula.new(alunos: 10, carteiras: 20)
+    sala_de_aula = alunos_ocupar_carteira(alunos 10) 
+    expect(sala_de_aula.alunos_ocupar_carteira).to eq 18
   end
 
   it 'deve ter uma lousa' do
@@ -29,7 +29,9 @@ describe SalaDeAula do
   end
 
   it 'deve ter professor' do
-    sala_de_aula = SalaDeAula.new
+    sala_de_aula = SalaDeAula.new do
+      expect(sala_de_aula).to eq 'professor'
+    end
 
   end
 end
