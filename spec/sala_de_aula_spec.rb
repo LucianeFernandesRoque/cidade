@@ -41,5 +41,4 @@ describe SalaDeAula do
     sala_de_aula.retirar_carteiras(10)
     expect(sala_de_aula.carteiras).to eq 10
   end
-  #quebrar a classe teste 
 end

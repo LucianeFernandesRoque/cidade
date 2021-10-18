@@ -20,11 +20,11 @@ class SalaDeAula
   end
 
   def add_carteiras(n)
-    @carteiras += 5
+    @carteiras += n
   end
 
   def retirar_carteiras(n)
-    @carteiras -= 10
+    @carteiras -= n
   end
 end
 #metodo remover carteira
