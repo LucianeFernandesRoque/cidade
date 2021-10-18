@@ -29,5 +29,17 @@ describe SalaDeAula do
     sala_de_aula.add_carteira
     expect(sala_de_aula.carteiras).to eq 31
   end
+
+  it 'deve add carteiras' do
+    sala_de_aula = SalaDeAula.new(carteiras: 30)
+    sala_de_aula.add_carteiras(5)
+    expect(sala_de_aula.carteiras).to eq 35
+  end
+
+  it 'deve remover carteiras' do
+    sala_de_aula = SalaDeAula.new
+    sala_de_aula.retirar_carteiras(10)
+    expect(sala_de_aula.carteiras).to eq 10
+  end
   #quebrar a classe teste 
 end
