@@ -1,19 +1,20 @@
 class SalaDeAula
-  attr_reader :carteiras, :lousa, :carteiras_ocupadas,:alunos
-  def initialize(carteiras:20, professor:1, alunos:10)
+  attr_reader :carteiras, :carteiras_ocupadas, :carteiras_vagas
+  def initialize(carteiras:20)
     @carteiras = carteiras
-    @lousa = lousa
-    @alunos = 0
-    @professor = 1
+    @carteiras_ocupadas = 0
+    @carteiras_vagas = carteiras
   end
   
-  def alunos_ocupar_carteira(alunos)
-    @carteiras -= alunos
+  def ocupar_carteira
+    @carteiras_vagas -= 1
+    @carteiras_ocupadas += 1
   end
 
-  def professor_escreve_na_lousa(giz)
-    @lousa << giz
+  def add_carteira
+    @carteiras += 1
   end
-
-
 end
+#metodo remover carteira
+#metodo add carteiras(n) +=n
+#retirar carteiras(n)
