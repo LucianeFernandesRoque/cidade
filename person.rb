@@ -1,9 +1,10 @@
 class Person
-attr_reader :nome, :sobrenome, :idade
+attr_reader :nome, :sobrenome, :idade, :id
   def initialize(nome, sobrenome, idade)
     @nome = nome
     @sobrenome = sobrenome
     @idade = idade
+    @id = rand(1..100)
   end
 
   def andar
@@ -14,6 +15,4 @@ attr_reader :nome, :sobrenome, :idade
     'Hello World'
   end
 
-  def sentar_no_banco
-  end
 end

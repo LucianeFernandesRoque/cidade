@@ -18,6 +18,10 @@ describe Person do
     expect(person.idade).to eq 33
   end
 
+  it 'retorna o id da pessoa' do
+    expect(person.id).to be_a Integer 
+  end
+
   it '#andar' do
 
     expect(person.andar).to eq 'estou andando'
