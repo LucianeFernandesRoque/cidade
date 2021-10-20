@@ -1,11 +1,12 @@
 class Professor
-  attr_reader :id, :disciplina, :sala_de_aula, :alunos, :chamada
-  def initialize(sala_de_aula)
+  attr_reader :id, :disciplina, :sala_de_aula, :alunos, :chamada, :nome
+  def initialize(sala_de_aula,nome)
     @id = (rand() * 10).to_i
     @disciplina = []
     @sala_de_aula = sala_de_aula
     @alunos = []
     @chamada = []
+    @nome = nome
   end
 
   def add_alunos(aluno)
