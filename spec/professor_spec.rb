@@ -12,7 +12,21 @@ describe Professor do
    expect(professor.sala_de_aula).to eq 'sala de aula' 
   end
 
+  it 'deve ter um diario de chamada' do
+    expect(professor.chamada.size).to eq 0
+  end
+
    it 'professor deve ter alunos' do
    expect(professor.alunos.size).to eq 0  
+  end
+
+  it 'professor deve ter um nome' do
+    nome = professor.add_alunos('Maria')
+    expect(professor.alunos).to eq nome 
+  end
+
+  it 'professor deve fazer chamada' do
+    chamada = professor.fazer_chamada
+    expect(professor.chamada).to eq chamada
   end
 end
