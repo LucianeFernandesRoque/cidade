@@ -1,7 +1,7 @@
 require_relative '../professor'
 
 describe Professor do
-  let(:professor) { Professor.new('sala de aula', 'Nelson') }
+  let(:professor) {Professor.new }
 
 
   it 'professor deve ter um id' do
@@ -12,17 +12,12 @@ describe Professor do
     expect(professor.disciplina.size).to eq 0
   end
 
-   it 'professor deve ter uma sala de aula' do
-   expect(professor.sala_de_aula).to eq 'sala de aula' 
-  end
-
   it 'professor deve ter um nome' do
-    nome = professor.nome
-    expect(professor.nome).to eq 'Nelson' 
+    #nome = Professor.create('Nelson')
+    expect(professor.nome).to eq nome
   end
 
   it 'professor deve ter um sobrenome' do
-    sobrenome = professor.sobrenome
-    expect(professor.sobrenome).to eq 'Nelsinho'
+    expect(professor.sobrenome).to eq sobrenome
   end
 end
