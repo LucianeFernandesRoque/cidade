@@ -1,4 +1,5 @@
 require_relative '../professor'
+require_relative '../person'
 
 describe Professor do
   let(:professor) {Professor.new }
@@ -13,7 +14,7 @@ describe Professor do
   end
 
   it 'professor deve ter um nome' do
-    #nome = Professor.create('Nelson')
+    nome = Professor.nome
     expect(professor.nome).to eq nome
   end
 

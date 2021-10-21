@@ -5,15 +5,4 @@ describe EstoqueBebida do
     estoque_bebida = EstoqueBebida.new
     expect(estoque_bebida).to eq 0
   end
-
-  it 'deve ter a quantidade de cada tipo' do
-    
-
-  end
-
-  it 'deve ter o preço' do
-    
-  end
-  
-
 end
