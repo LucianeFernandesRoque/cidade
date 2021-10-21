@@ -1,4 +1,4 @@
-class Person
+class Person 
 attr_reader :nome, :sobrenome, :idade, :id
   def initialize(nome, sobrenome, idade)
     @nome = nome
@@ -14,5 +14,4 @@ attr_reader :nome, :sobrenome, :idade, :id
   def falar
     'Hello World'
   end
-
 end
