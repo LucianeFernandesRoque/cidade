@@ -1,12 +1,12 @@
 require_relative '../professor'
-require_relative '../person'
+
 
 describe Professor do
-  let(:professor) {Professor.new }
+  let(:professor) {Professor.new(Person.new('Flouki', 'Flouki',33,10))}
 
 
   it 'professor deve ter um id' do
-    expect(professor.id.size).to eq 8
+    expect(professor).to eq 8
   end
 
     it 'professor deve ter uma disciplina' do
@@ -14,8 +14,7 @@ describe Professor do
   end
 
   it 'professor deve ter um nome' do
-    nome = Professor.nome
-    expect(professor.nome).to eq nome
+    expect(professor.nome).to eq'Flouki'
   end
 
   it 'professor deve ter um sobrenome' do
