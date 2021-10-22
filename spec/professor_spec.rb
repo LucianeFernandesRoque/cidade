@@ -2,7 +2,7 @@ require_relative '../professor'
 
 
 describe Professor do
-  let(:professor) {Professor.new(Person.new('Flouki', 'Flouki',33,10))}
+  let(:professor) {Professor.new('Flouki', 'Flouki',33,10)}
 
 
   it 'professor deve ter um id' do

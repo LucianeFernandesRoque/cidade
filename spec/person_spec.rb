@@ -2,7 +2,7 @@ require 'spec_helper'
 require_relative '../person'
 
 describe Person do
-  let(:person) {Person.new('Luciane','Roque Fernandes',33)}
+  let(:person) {Person.new('Luciane','Roque Fernandes',33,10)}
   it 'retorna o nome de uma pessoa' do
     
     expect(person.nome).to eq 'Luciane'
