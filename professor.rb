@@ -6,4 +6,8 @@ class Professor < Person
     super(nome,sobrenome,idade,id)
     @disciplina = []
   end
+
+  def lecionar_aula(professor)
+    @disciplina << "A terra não é plana"
+  end
 end

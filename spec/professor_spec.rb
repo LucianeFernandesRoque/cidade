@@ -21,4 +21,11 @@ describe Professor do
   it 'professor deve ter um sobrenome' do
     expect(professor.sobrenome).to eq 'Floukoso'
   end
+
+  context '#lecionar aula' do
+    it 'professor deve lecionar uma aula' do
+      aula = professor.lecionar_aula(professor)
+      expect(professor.disciplina).to eq ["A terra não é plana"]
+    end
+  end
 end
