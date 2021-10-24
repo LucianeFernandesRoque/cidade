@@ -3,7 +3,7 @@ require_relative '../escola'
 require_relative '../person'
 
 describe Escola do
-let(:escola) { Escola.new }
+let(:escola) { Escola.new(:nome,:sobrenome,:idade,:id) }
 
   it 'deve ter alunos' do
     expect(escola.alunos.size).to eq 0
@@ -19,13 +19,13 @@ let(:escola) { Escola.new }
 
   
   it 'deve add professores' do
-    professor = Person.new('Paulo','Rodrigues', 30)
+    professor = Person.new('Paulo','Rodrigues', 30,10)
     escola.add_professor(professor)
     expect(escola.professores.size).to eq 1
   end
 
   it 'deve add alunos' do
-    aluno = Person.new('Luciane','Roque', 34)
+    aluno = Person.new('Luciane','Roque', 34,11)
     escola.add_alunos(aluno)
     expect(escola.alunos.size).to eq 1
   end

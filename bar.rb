@@ -1,28 +1,18 @@
 require_relative './person'
 class Bar < Person
-attr_reader :bebidas, :nome_do_bar, :balcao, :copos, :dono_do_bar, :cliente
-attr_reader :nome,:sobrenome, :idadem, :id  
-  def initialize
+attr_reader :bebidas, :nome_do_bar,:copos, :dono_do_bar,:clientes
+attr_reader :nome,:sobrenome, :idade, :id  
+  def initialize(nome,sobrenome,idade,id,nome_do_bar,dono_do_bar)
     super(nome,sobrenome,idade,id)
-    @nome_do_bar = nome_do_bar
+    @nome_do_bar = 'Floukis'
     @bebidas = []
     @copos = []
-    @dono_do_bar = Person.create
-    @cliente = cliente
-  end
-  
-
-  def add_nome_do_bar
-    @nome_do_bar = 'Floukis'
-  end
-
-
-  def add_dono_do_bar(dono_do_bar)
-    @dono_do_bar = ('Zé, Zé, 60')
+    @dono_do_bar = 'Floukinho'
+    @clientes = []
   end
 
   def add_cliente(cliente)
-    @cliente = ('flouki flouki 18')
+    @clientes  << cliente
   end
 
   def add_bebidas(bebida)

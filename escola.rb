@@ -1,7 +1,8 @@
-class Escola
+require './professor'
+class Escola < Professor
   attr_reader :alunos, :professores, :salas_de_aula
-
-  def initialize
+  attr_reader :nome, :sobrenome,:idade, :id
+  def initialize(nome,sobrenome,idade,id)
     @alunos = []
     @professores = []
     @salas_de_aula = []
