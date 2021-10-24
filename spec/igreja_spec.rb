@@ -16,7 +16,7 @@ let(:igreja) { Igreja.new('padre')}
   end
 
   it 'add fieis' do
-    fiel = Person.new('RR','Soarez', 90)
+    fiel = Person.new('RR','Soarez', 90,10)
     igreja.add_fieis(fiel)
     expect(igreja.fieis.size).to eq 1
   end
@@ -27,7 +27,7 @@ let(:igreja) { Igreja.new('padre')}
   end
 
   it 'o Padre deve ter um nome' do
-    padre = Person.new('Fabio','De Mello', 48)
+    padre = Person.new('Fabio','De Mello', 48,30)
     igreja.add_nome_padre(padre)
     expect(igreja.padre).to eq ('Fabio De Mello 48')
   end

@@ -17,7 +17,7 @@ describe Praca do
   end
 
   it 'add aposentado' do
-    aposentado = Person.new('Larissa','Manoela',80)
+    aposentado = Person.new('Larissa','Manoela',80,10)
     aposentado = praca.add_aposentados(aposentado)
     expect(praca.aposentados.size).to eq 1
   end

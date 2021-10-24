@@ -1,4 +1,5 @@
-class Igreja
+require_relative './person'
+class Igreja < Person
   attr_reader :fieis, :padre, :bancos
   def initialize(padre)
     @fieis = []
