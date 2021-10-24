@@ -1,8 +1,7 @@
 require_relative '../estoque_bebida'
-
 describe EstoqueBebida do
+  let(:estoque_bebida) { EstoqueBebida.new }
   it 'deve ter tipos de bebidas' do
-    estoque_bebida = EstoqueBebida.new
-    expect(estoque_bebida).to eq 0
+    expect(estoque_bebida.tipos.size).to eq 0
   end
 end

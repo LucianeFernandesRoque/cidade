@@ -1,5 +1,5 @@
 require_relative './person'
-class Mercado
+class Mercado < Person
   attr_reader :produtos, :empregados, :clientes
   attr_reader :nome, :sobrenome, :idade, :id
   def initialize(nome,sobrenome,idade,id)

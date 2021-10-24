@@ -1,4 +1,3 @@
-require_relative '../person'
 require_relative '../mercado'
 
 
@@ -23,7 +22,7 @@ describe Mercado do
   end
 
   it 'add empregados' do
-    empregado = add_empregado(empregado)
+    empregado = mercado.add_empregado(empregado)
     expect(mercado.empregados.size).to eq 1
   end
 end
