@@ -1,4 +1,4 @@
-require_relative '../sala_de_aula'
+require './escola/sala_de_aula'
 describe SalaDeAula do
   it 'deve ter 20 carteiras' do
     sala_de_aula = SalaDeAula.new(carteiras: 20)

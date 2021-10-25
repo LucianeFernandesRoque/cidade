@@ -1,7 +1,9 @@
-require_relative '../professor'
+require './escola/professor'
+require_relative './escola/person'
 
-describe Professor do
-  let(:professor) {Professor.new('Flouki','Floukoso',33,100)}
+
+describe Escola::Professor do
+  let(:professor) {Escola::Professor.new('Flouki','Floukoso',33,100)}
 
 
     it 'professor deve ter uma disciplina' do

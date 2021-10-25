@@ -1,4 +1,4 @@
-require_relative '../disciplina'
+require './escola/disciplina'
 describe Disciplina do
   it 'deve ter um nome' do
     disciplina = Disciplina.new('Uml','Paulo')

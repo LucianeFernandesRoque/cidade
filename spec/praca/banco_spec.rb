@@ -1,5 +1,5 @@
-require_relative '../banco'
-require_relative '../person'
+require './praca/banco'
+require_relative '../person_spec'
 
 describe Banco do
   let(:banco) { Banco.new }
