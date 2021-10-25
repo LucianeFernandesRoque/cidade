@@ -1,5 +1,4 @@
 require_relative '../professor'
-require_relative '../person'
 
 describe Professor do
   let(:professor) {Professor.new('Flouki','Floukoso',33,100)}
