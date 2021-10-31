@@ -1,8 +1,10 @@
-require './escola/escola'
-require_relative '../person_spec'
+require './spec_helper'
+require_relative '/escola/escola'
+require_relative '/person'
 
 describe Escola do
 let(:escola) { Escola::Escola.new }
+
 
   it 'deve ter alunos' do
     expect(escola.alunos.size).to eq 0

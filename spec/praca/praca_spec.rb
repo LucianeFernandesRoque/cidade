@@ -1,6 +1,4 @@
-require_relative '../praca'
-require_relative '../person'
-
+require_relative './praca/praca'
 describe Praca do
   let(:praca) { Praca.new('Praça da Matriz')} 
   it 'deve ter bancos' do

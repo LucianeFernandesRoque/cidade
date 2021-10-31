@@ -1,4 +1,4 @@
-require_relative '../igreja'
+require_relative './igreja'
 require_relative '../person'
 
 describe Igreja do

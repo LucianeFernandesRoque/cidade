@@ -1,4 +1,4 @@
-require_relative '../bar'
+require_relative './bar/bar'
 describe Bar do
   let(:bar)  { Bar.new(:nome,:sobrenome,:idade,:id,:nome_do_bar,:dono_do_bar) }
 
