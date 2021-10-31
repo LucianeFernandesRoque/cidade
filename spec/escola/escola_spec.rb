@@ -1,4 +1,3 @@
-require './spec_helper'
 require_relative '/escola/escola'
 require_relative '/person'
 

@@ -1,4 +1,4 @@
-require './escola/professor'
+require_relative './escola/professor'
 require_relative './escola/person'
 
 
