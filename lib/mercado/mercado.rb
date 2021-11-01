@@ -1,4 +1,4 @@
-require_relative './person'
+require_relative '../person'
 class Mercado < Person
   attr_reader :produtos, :empregados, :clientes
   attr_reader :nome, :sobrenome, :idade, :id

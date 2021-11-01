@@ -1,4 +1,4 @@
-require_relative '../estoque_bebida'
+require './lib/bar/estoque_bebida'
 describe EstoqueBebida do
   let(:estoque_bebida) { EstoqueBebida.new }
   it 'deve ter tipos de bebidas' do

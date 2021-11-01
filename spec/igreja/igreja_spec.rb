@@ -1,6 +1,4 @@
-require_relative './igreja'
-require_relative '../person'
-
+require './lib/igreja/igreja'
 describe Igreja do
 let(:igreja) { Igreja.new('padre')}
   it 'deve ter fieis' do

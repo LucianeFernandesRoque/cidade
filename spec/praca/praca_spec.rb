@@ -1,4 +1,4 @@
-require_relative './praca/praca'
+require './lib/praca/praca'
 describe Praca do
   let(:praca) { Praca.new('Praça da Matriz')} 
   it 'deve ter bancos' do

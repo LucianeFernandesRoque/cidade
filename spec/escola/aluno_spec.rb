@@ -1,5 +1,5 @@
-require_relative '/escola/escola'
-describe Escola::Aluno do
+require './lib/escola/aluno'
+describe  Escola::Aluno do
   let(:aluno) { Escola::Aluno.new('Flouki','Floukinho',10,1) }
   it 'o aluno deve ter um nome' do
     expect(aluno.nome).to eq 'Flouki'  

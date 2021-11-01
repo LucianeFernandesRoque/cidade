@@ -1,4 +1,4 @@
-require_relative './person'
+require './lib/person'
 class Bar < Person
 attr_reader :bebidas, :nome_do_bar,:copos, :dono_do_bar,:clientes
 attr_reader :nome,:sobrenome, :idade, :id  

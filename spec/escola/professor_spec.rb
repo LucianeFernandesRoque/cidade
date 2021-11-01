@@ -1,5 +1,5 @@
-require_relative './escola/professor'
-require_relative './escola/person'
+require './lib/escola/professor'
+require './lib/person'
 
 
 describe Escola::Professor do

@@ -1,15 +1,6 @@
 #!/usr/bin/env ruby
 require 'bundler/setup'
-require_relative '/praca/praca'
-require_relative '/praca/banco'
-require_relative '/escola/escola'
-require_relative '/escola/aluno'
-require_relative '/escola/disciplina'
-require_relative '/escola/professor'
-require_relative '/escola/sala_de_aula'
-require_relative '/igreja/igreja'
-require_relative '/estoque/estoque'
-require_relative '/mercado/mercado'
+
 
 require 'irb'
 IRB.start(__FILE__) 

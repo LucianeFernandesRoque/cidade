@@ -1,5 +1,4 @@
-require_relative '/escola/escola'
-require_relative '/person'
+require './lib/escola/escola'
 
 describe Escola do
 let(:escola) { Escola::Escola.new }

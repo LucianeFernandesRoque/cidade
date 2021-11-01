@@ -1,4 +1,5 @@
-require_relative './person'
+require './lib/person'
+
 module Escola
   class Aluno < Person
     attr_reader :nome, :sobrenome, :idade, :id

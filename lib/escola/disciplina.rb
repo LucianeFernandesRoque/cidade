@@ -1,3 +1,4 @@
+require './lib/person'
 module Escola
   class Disciplina
     attr_reader :nome,:professor,:alunos

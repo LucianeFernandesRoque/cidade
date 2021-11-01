@@ -1,5 +1,4 @@
-require_relative '../mercado'
-
+require './lib/mercado/mercado'
 
 describe Mercado do
   let(:mercado) { Mercado.new('Luciane','Roque', 33,10)}

@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../person'
+require './lib/person'
 
 describe Person do
   let(:person) {Person.new('Luciane','Roque Fernandes',33,10)}

@@ -1,5 +1,4 @@
-require './praca/banco'
-require_relative '../person_spec'
+require './lib/praca/banco'
 
 describe Banco do
   let(:banco) { Banco.new }
