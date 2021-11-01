@@ -1,6 +1,6 @@
 require './lib/praca/praca'
-describe Praca do
-  let(:praca) { Praca.new('Praça da Matriz')} 
+describe Praca::Praca do
+  let(:praca) { Praca::Praca.new('Praça da Matriz')} 
   it 'deve ter bancos' do
     expect(praca.bancos.size).to eq 0
   end

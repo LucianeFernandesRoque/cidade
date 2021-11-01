@@ -1,16 +1,14 @@
 require './lib/praca/banco'
 
-describe Banco do
-  let(:banco) { Banco.new }
+describe Praca::Banco do
+  let(:banco) { Praca::Banco.new }
   it 'deve ter 3 lugares do banco' do
     expect(banco.lugares_disponiveis).to eq 3
   end
-#aa(setup)
-#act
-#assert
+
 context 'ocupar banco' do
   it 'deve ter uma pessoa sentada no banco' do
-      banco.ocupar_acento#executar
+      banco.ocupar_acento
     expect(banco.lugares_disponiveis).to eq 2
   end
   
