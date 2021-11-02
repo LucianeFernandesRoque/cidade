@@ -26,4 +26,8 @@ attr_reader :nome,:sobrenome, :idade, :id
   def add_tipos_de_bebida(bebida)
     @bebidas = ['Caipirinha', 'Cerveja','Vodka','Vinho']
   end
+
+  def pedir_bebida(clientes)
+    @clientes = 'Desce uma caipirinha'
+  end
 end

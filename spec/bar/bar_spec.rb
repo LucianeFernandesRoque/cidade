@@ -20,4 +20,9 @@ describe Bar do
     expect(bar.bebidas).to eq ["Caipirinha", "Cerveja", "Vodka", "Vinho"]
   end
 
+  it 'pedir bebidas' do
+    clientes = bar.pedir_bebida(clientes)
+    expect(bar.clientes).to eq "Desce uma caipirinha"
+  end 
+
 end
