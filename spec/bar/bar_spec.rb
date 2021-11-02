@@ -1,6 +1,6 @@
 require './lib/bar/bar'
 describe Bar::Bar do
-  let(:bar)  { Bar::Bar.new(:nome,:sobrenome,:idade,:id,:nome_do_bar,:dono_do_bar) }
+  let(:bar) { Bar::Bar.new(:nome, :sobrenome, :idade, :id, :nome_do_bar, :dono_do_bar) }
 
   it 'deve ter um nome' do
     expect(bar.nome_do_bar).to eq 'Floukis'
@@ -17,12 +17,11 @@ describe Bar::Bar do
 
   it 'deve ter bebidas' do
     bebidas = bar.add_tipos_de_bebida(bebidas)
-    expect(bar.bebidas).to eq ["Caipirinha", "Cerveja", "Vodka", "Vinho"]
+    expect(bar.bebidas).to eq %w[Caipirinha Cerveja Vodka Vinho]
   end
 
   it 'pedir bebidas' do
     clientes = bar.pedir_bebida(clientes)
-    expect(bar.clientes).to eq "Desce uma caipirinha"
-  end 
-
+    expect(bar.clientes).to eq 'Desce uma caipirinha'
+  end
 end

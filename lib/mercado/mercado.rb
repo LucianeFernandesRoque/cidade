@@ -1,9 +1,9 @@
 require_relative '../person'
 class Mercado < Person
-  attr_reader :produtos, :empregados, :clientes
-  attr_reader :nome, :sobrenome, :idade, :id
-  def initialize(nome,sobrenome,idade,id)
-    super(nome,sobrenome,idade,id)
+  attr_reader :produtos, :empregados, :clientes, :nome, :sobrenome, :idade, :id
+
+  def initialize(nome, sobrenome, idade, id)
+    super(nome, sobrenome, idade, id)
     @produtos = []
     @empregados = []
     @clientes = []

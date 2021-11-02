@@ -1,13 +1,11 @@
 require './lib/escola/professor'
 require './lib/person'
 
-
 describe Escola::Professor do
-  let(:professor) {Escola::Professor.new('Flouki','Floukoso',33,100)}
+  let(:professor) { Escola::Professor.new('Flouki', 'Floukoso', 33, 100) }
 
-
-    it 'professor deve ter uma disciplina' do
-      disciplina =  professor.disciplina
+  it 'professor deve ter uma disciplina' do
+    disciplina = professor.disciplina
     expect(professor.disciplina.size).to eq 0
   end
 
@@ -26,7 +24,7 @@ describe Escola::Professor do
   context '#lecionar aula' do
     it 'professor deve lecionar uma aula' do
       aula = professor.lecionar_aula(professor)
-      expect(professor.disciplina).to eq ["A terra não é plana"]
+      expect(professor.disciplina).to eq ['A terra não é plana']
     end
   end
 end

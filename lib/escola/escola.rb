@@ -11,7 +11,7 @@ module Escola
     def add_professor(professor)
       @professores << professor
     end
-    
+
     def add_alunos(aluno)
       @alunos << aluno
     end

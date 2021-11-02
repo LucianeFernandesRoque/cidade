@@ -1,9 +1,10 @@
 require_relative '../person'
 class Igreja < Person
   attr_reader :fieis, :padre, :bancos
+
   def initialize(padre)
     @fieis = []
-    @bancos =[]
+    @bancos = []
     @padre = padre
   end
 
@@ -15,7 +16,7 @@ class Igreja < Person
     @bancos << banco
   end
 
-  def add_nome_padre(padre)
-    @padre = ('Fabio De Mello 48')
+  def add_nome_padre(_padre)
+    @padre = 'Fabio De Mello 48'
   end
 end

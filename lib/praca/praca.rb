@@ -1,7 +1,7 @@
 module Praca
   class Praca < Person
-    attr_reader :bancos, :nome, :aposentados
-    attr_reader :nome,:sobrenome, :idade, :id
+    attr_reader :bancos, :nome, :aposentados, :nome, :sobrenome, :idade, :id
+
     def initialize(nome)
       @bancos = []
       @aposentados = []

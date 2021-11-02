@@ -1,6 +1,7 @@
-class Person 
-attr_reader :nome, :sobrenome, :idade, :id
-  def initialize(nome, sobrenome, idade,id)
+class Person
+  attr_reader :nome, :sobrenome, :idade, :id
+
+  def initialize(nome, sobrenome, idade, _id)
     @nome = nome
     @sobrenome = sobrenome
     @idade = idade

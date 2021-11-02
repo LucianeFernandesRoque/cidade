@@ -1,8 +1,8 @@
 require './lib/escola/aluno'
-describe  Escola::Aluno do
-  let(:aluno) { Escola::Aluno.new('Flouki','Floukinho',10,1) }
+describe Escola::Aluno do
+  let(:aluno) { Escola::Aluno.new('Flouki', 'Floukinho', 10, 1) }
   it 'o aluno deve ter um nome' do
-    expect(aluno.nome).to eq 'Flouki'  
+    expect(aluno.nome).to eq 'Flouki'
   end
   it 'o aluno deve ter sobrenome' do
     expect(aluno.sobrenome).to eq 'Floukinho'

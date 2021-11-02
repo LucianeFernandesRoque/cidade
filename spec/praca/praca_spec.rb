@@ -1,6 +1,6 @@
 require './lib/praca/praca'
 describe Praca::Praca do
-  let(:praca) { Praca::Praca.new('Praça da Matriz')} 
+  let(:praca) { Praca::Praca.new('Praça da Matriz') }
   it 'deve ter bancos' do
     expect(praca.bancos.size).to eq 0
   end
@@ -15,7 +15,7 @@ describe Praca::Praca do
   end
 
   it 'add aposentado' do
-    aposentado = Person.new('Larissa','Manoela',80,10)
+    aposentado = Person.new('Larissa', 'Manoela', 80, 10)
     aposentado = praca.add_aposentados(aposentado)
     expect(praca.aposentados.size).to eq 1
   end

@@ -1,10 +1,10 @@
 require './lib/person'
 module Bar
   class Bar < Person
-  attr_reader :bebidas, :nome_do_bar,:copos, :dono_do_bar,:clientes
-  attr_reader :nome,:sobrenome, :idade, :id  
-    def initialize(nome,sobrenome,idade,id,nome_do_bar,dono_do_bar)
-      super(nome,sobrenome,idade,id)
+    attr_reader :bebidas, :nome_do_bar, :copos, :dono_do_bar, :clientes, :nome, :sobrenome, :idade, :id
+
+    def initialize(nome, sobrenome, idade, id, _nome_do_bar, _dono_do_bar)
+      super(nome, sobrenome, idade, id)
       @nome_do_bar = 'Floukis'
       @bebidas = []
       @copos = []
@@ -13,7 +13,7 @@ module Bar
     end
 
     def add_cliente(cliente)
-      @clientes  << cliente
+      @clientes << cliente
     end
 
     def add_bebidas(bebida)
@@ -24,11 +24,11 @@ module Bar
       @copos << copo
     end
 
-    def add_tipos_de_bebida(bebida)
-      @bebidas = ['Caipirinha', 'Cerveja','Vodka','Vinho']
+    def add_tipos_de_bebida(_bebida)
+      @bebidas = %w[Caipirinha Cerveja Vodka Vinho]
     end
 
-    def pedir_bebida(clientes)
+    def pedir_bebida(_clientes)
       @clientes = 'Desce uma caipirinha'
     end
   end

@@ -1,7 +1,7 @@
 require './lib/escola/sala_de_aula'
 
 describe Escola::SalaDeAula do
-  let(:sala_de_aula) { Escola::SalaDeAula.new}
+  let(:sala_de_aula) { Escola::SalaDeAula.new }
   it 'deve ter 20 carteiras' do
     expect(sala_de_aula.carteiras).to eq 20
   end
@@ -13,12 +13,12 @@ describe Escola::SalaDeAula do
 
   it 'deve ter 1 carteiras ocupadas' do
     sala_de_aula = Escola::SalaDeAula.new
-    sala_de_aula.ocupar_carteira 
+    sala_de_aula.ocupar_carteira
     expect(sala_de_aula.carteiras_ocupadas).to eq 1
     expect(sala_de_aula.carteiras_vagas).to eq 19
     expect(sala_de_aula.carteiras).to eq 20
   end
-  
+
   it 'deve ter 20 carteiras vagas' do
     sala_de_aula = Escola::SalaDeAula.new(carteiras: 30)
     sala_de_aula.ocupar_carteira
