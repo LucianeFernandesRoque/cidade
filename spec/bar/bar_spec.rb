@@ -15,4 +15,9 @@ describe Bar do
     expect(bar.clientes.size).to eq 1
   end
 
+  it 'deve ter bebidas' do
+    bebidas = bar.add_tipos_de_bebida(bebidas)
+    expect(bar.bebidas).to eq ["Caipirinha", "Cerveja", "Vodka", "Vinho"]
+  end
+
 end
