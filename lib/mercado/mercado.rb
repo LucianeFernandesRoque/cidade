@@ -1,10 +1,8 @@
-require_relative '../person'
-class Mercado < Person
-  attr_reader :produtos, :empregados, :clientes, :nome, :sobrenome, :idade, :id
-
-  def initialize(nome, sobrenome, idade, id)
-    super(nome, sobrenome, idade, id)
-    @produtos = []
+require_relative './produtos'
+class Mercado 
+  attr_reader :produtos, :empregados, :clientes
+  def initialize
+    @produtos = Produtos.new
     @empregados = []
     @clientes = []
   end
