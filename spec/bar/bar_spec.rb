@@ -1,6 +1,6 @@
 require './lib/bar/bar'
 describe Bar::Bar do
-  let(:bar) { Bar::Bar.new(:nome, :sobrenome, :idade, :id, :nome_do_bar, :dono_do_bar) }
+  let(:bar) { Bar::Bar.new(:nome_do_bar, :dono_do_bar) }
 
   it 'deve ter um nome' do
     expect(bar.nome_do_bar).to eq 'Floukis'

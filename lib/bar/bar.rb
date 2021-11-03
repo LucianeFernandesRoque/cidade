@@ -1,10 +1,7 @@
-require './lib/person'
 module Bar
-  class Bar < Person
-    attr_reader :bebidas, :nome_do_bar, :copos, :dono_do_bar, :clientes, :nome, :sobrenome, :idade, :id
-
-    def initialize(nome, sobrenome, idade, id, _nome_do_bar, _dono_do_bar)
-      super(nome, sobrenome, idade, id)
+  class Bar
+    attr_reader :bebidas, :nome_do_bar, :copos, :dono_do_bar, :clientes
+    def initialize(nome_do_bar, _dono_do_bar)
       @nome_do_bar = 'Floukis'
       @bebidas = []
       @copos = []
