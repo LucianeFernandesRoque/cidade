@@ -1,14 +1,15 @@
 require './lib/mercado/mercado'
+require './lib/mercado/produtos'
 
 describe Mercado do
   let(:mercado) { Mercado.new}
   it 'retorna os produtos' do
-    produtos = mercado.produtos
-    expect(mercado.produtos.size).to eq 0
+    produtos = mercado.produtos{ Produtos.new(nome)}
+    expect(mercado.produtos.nome.size).to eq 0
   end
 
   it 'retorna empregados' do
-    expect(mercado.empregados.size).to eq 0
+    expect(mercado.empregados.length).to eq 0
   end
 
   it 'retorna clientes' do

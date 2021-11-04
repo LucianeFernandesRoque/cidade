@@ -1,14 +1,13 @@
-require_relative './produtos'
 class Mercado 
-  attr_reader :produtos, :empregados, :clientes
+  attr_reader :produtos, :empregados, :clientes,:nome
   def initialize
-    @produtos = Produtos.new
+    @produtos = Produtos.new(nome)
     @empregados = []
     @clientes = []
   end
 
   def add_produto(produto)
-    @produtos << produto
+    @produtos = Produtos.new(nome)
   end
 
   def add_empregado(empregado)
