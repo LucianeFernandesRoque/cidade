@@ -1,7 +1,7 @@
 class Mercado 
   attr_reader :produtos, :empregados, :clientes,:nome
   def initialize
-    @produtos = Produtos.new(nome)
+    @produtos = Produto.new
     @empregados = []
     @clientes = []
   end
